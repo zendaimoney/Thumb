@@ -13,5 +13,6 @@
 #import "NSString+Tony.h"
 #import "GSReachability.h"
 #import "Reachability.h"
+#import "SSFSegmentControl.h"
 
 #endif

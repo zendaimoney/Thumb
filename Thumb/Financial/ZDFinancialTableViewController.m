@@ -8,8 +8,12 @@
 
 #import "ZDFinancialTableViewController.h"
 #import "ZDWebService.h"
+#import "AllCustomerCategoryHeaders.h"
+#import "financialTableCell.h"
 
-@interface ZDFinancialTableViewController ()
+@interface ZDFinancialTableViewController ()<SSFSegmentControlDelegate>
+
+@property (strong, nonatomic) NSArray *arr;
 
 @end
 
@@ -17,7 +21,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self configureView];
+    self.arr = @[@"1",@"2"];
+}
+
+- (void)configureView
+{
+    SSFSegmentControl *segment = [SSFSegmentControl SSFSegmentedControlInstance];
+    segment.delegate = self;
+    self.tableView.tableHeaderView = segment;
+}
+
+#pragma mark - SSFSegmentDelegate
+
+- (void)SSFSegmentControlDidPressed:(UIView *)view selectedIndex:(NSInteger)selectedIndex
+{
+    switch (selectedIndex) {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+        default:
+            break;
+    }
+}
+
+#pragma mark - tabbleView datasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.arr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellidentifier = @"financialCell";
+    financialTableCell *cell = [tableView dequeueReusableCellWithIdentifier:cellidentifier forIndexPath:indexPath];
+    return cell;
 }
 
 

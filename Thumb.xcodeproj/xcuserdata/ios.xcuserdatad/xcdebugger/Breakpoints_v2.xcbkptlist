@@ -9,52 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Thumb/Financial/ZDFinancialTableViewController.m"
-            timestampString = "437292698.457158"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "-test:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ZDFinancialTableViewController test:]"
-                  moduleName = "Thumb"
-                  urlString = "file:///Users/ios/Documents/Thumb/Thumb/Financial/ZDFinancialTableViewController.m"
-                  timestampString = "437460811.648425"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__39-[ZDFinancialTableViewController test:]_block_invoke"
-                  moduleName = "Thumb"
-                  urlString = "file:///Users/ios/Documents/Thumb/Thumb/Financial/ZDFinancialTableViewController.m"
-                  timestampString = "437460811.64856"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "58">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Thumb/mode/ZDNSURLSession.m"
             timestampString = "437361580.05856"
             startingColumnNumber = "9223372036854775807"
@@ -94,22 +48,6 @@
             startingLineNumber = "81"
             endingLineNumber = "81"
             landmarkName = "-URLSession:task:didCompleteWithError:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Thumb/Financial/ZDFinancialTableViewController.m"
-            timestampString = "437294485.343185"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-test:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
