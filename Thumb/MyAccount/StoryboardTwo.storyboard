@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--我的账户-->
+        <scene sceneID="M6O-tI-bzB">
+            <objects>
+                <tableViewController id="k0E-3c-6Xt" customClass="ZDMyAccountTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ngo-CI-MGg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GOc-YO-yW6">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GOc-YO-yW6" id="jk4-j9-FRB">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="k0E-3c-6Xt" id="VYN-OM-5RW"/>
+                            <outlet property="delegate" destination="k0E-3c-6Xt" id="rma-Rn-Bmw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我的账户" id="EHH-iz-nzt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rng-Sc-bMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715" y="461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8w1-sQ-1e6">
+            <objects>
+                <navigationController storyboardIdentifier="storyBoardTwoNav" automaticallyAdjustsScrollViewInsets="NO" id="9TL-Uj-Aqq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kUy-bp-Lph">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k0E-3c-6Xt" kind="relationship" relationship="rootViewController" id="LTo-FP-yGY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZF7-yA-xXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="461"/>
+        </scene>
+    </scenes>
+</document>

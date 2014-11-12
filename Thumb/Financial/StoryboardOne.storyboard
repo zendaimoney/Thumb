@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--理财规划-->
+        <scene sceneID="IOd-e6-hCg">
+            <objects>
+                <tableViewController id="9Ut-El-0Cv" customClass="ZDFinancialTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0An-B2-VQj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="o8v-C4-PLz">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o8v-C4-PLz" id="NSg-uw-rfa">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9Ut-El-0Cv" id="rGs-zT-tU3"/>
+                            <outlet property="delegate" destination="9Ut-El-0Cv" id="qCQ-Oc-hm2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="理财规划" id="GVY-7h-3Pi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="kh3-xi-Nh9">
+                            <connections>
+                                <action selector="test:" destination="9Ut-El-0Cv" id="LfJ-LQ-vMG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5U-mC-Yml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728" y="414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fcP-mi-5LU">
+            <objects>
+                <navigationController storyboardIdentifier="storyBoardOneNav" automaticallyAdjustsScrollViewInsets="NO" id="RdG-Oo-mPh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AoM-L1-EKb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Ut-El-0Cv" kind="relationship" relationship="rootViewController" id="cG2-OQ-vIX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddd-8l-JRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="414"/>
+        </scene>
+    </scenes>
+</document>
