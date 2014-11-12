@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSString *parseString;
 @property (strong, nonatomic) void(^completionHandler)(NSError *error, NSDictionary *resultDic);
 @property (strong, nonatomic) NSString *xmlString;
+
 @end
 
 @implementation ZDWebserviceDataParse
