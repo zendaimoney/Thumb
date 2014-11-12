@@ -28,6 +28,8 @@
 		81E64D431A1207270070BCD3 /* ZDWebService+URLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E64D3D1A1207270070BCD3 /* ZDWebService+URLString.m */; };
 		81E64D441A1207270070BCD3 /* ZDWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E64D3F1A1207270070BCD3 /* ZDWebService.m */; };
 		81E64D451A1207270070BCD3 /* ZDWebserviceDataParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E64D411A1207270070BCD3 /* ZDWebserviceDataParse.m */; };
+		81E795CF1A1339B900B75715 /* SSFSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E795CD1A1339B900B75715 /* SSFSegmentControl.m */; };
+		81E795D01A1339B900B75715 /* SSFSegmentControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,9 @@
 		81E64D3F1A1207270070BCD3 /* ZDWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDWebService.m; sourceTree = "<group>"; };
 		81E64D401A1207270070BCD3 /* ZDWebserviceDataParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDWebserviceDataParse.h; sourceTree = "<group>"; };
 		81E64D411A1207270070BCD3 /* ZDWebserviceDataParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDWebserviceDataParse.m; sourceTree = "<group>"; };
+		81E795CC1A1339B900B75715 /* SSFSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFSegmentControl.h; sourceTree = "<group>"; };
+		81E795CD1A1339B900B75715 /* SSFSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFSegmentControl.m; sourceTree = "<group>"; };
+		81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFSegmentControl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +218,7 @@
 		81E36BD81A1090E300784D93 /* customerCategory */ = {
 			isa = PBXGroup;
 			children = (
+				81E795CB1A1339B900B75715 /* SSFSegmentedControl */,
 				81E36BD91A10913F00784D93 /* MBProgressHUD */,
 				81E36BDC1A10913F00784D93 /* NSString+Tony.h */,
 				81E36BDD1A10913F00784D93 /* NSString+Tony.m */,
@@ -255,6 +261,16 @@
 				81E64D411A1207270070BCD3 /* ZDWebserviceDataParse.m */,
 			);
 			path = webService;
+			sourceTree = "<group>";
+		};
+		81E795CB1A1339B900B75715 /* SSFSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				81E795CC1A1339B900B75715 /* SSFSegmentControl.h */,
+				81E795CD1A1339B900B75715 /* SSFSegmentControl.m */,
+				81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */,
+			);
+			path = SSFSegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E795D01A1339B900B75715 /* SSFSegmentControl.xib in Resources */,
 				813D036A1A105E0300F62E40 /* StoryboardThree.storyboard in Resources */,
 				813D03571A105DE500F62E40 /* StoryboardOne.storyboard in Resources */,
 				813D032C1A10551400F62E40 /* LaunchScreen.xib in Resources */,
@@ -369,6 +386,7 @@
 				813D03581A105DE500F62E40 /* ZDFinancialTableViewController.m in Sources */,
 				813D03211A10551400F62E40 /* AppDelegate.m in Sources */,
 				81E36BE51A10913F00784D93 /* GSReachability.m in Sources */,
+				81E795CF1A1339B900B75715 /* SSFSegmentControl.m in Sources */,
 				813D03671A105E0300F62E40 /* ZDMainTabbarController.m in Sources */,
 				81E36BE31A10913F00784D93 /* MBProgressHUD.m in Sources */,
 				81E64D431A1207270070BCD3 /* ZDWebService+URLString.m in Sources */,

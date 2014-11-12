@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="9Ut-El-0Cv" customClass="ZDFinancialTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0An-B2-VQj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -35,13 +35,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5U-mC-Yml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1728" y="414"/>
+            <point key="canvasLocation" x="1347" y="414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fcP-mi-5LU">
             <objects>
                 <navigationController storyboardIdentifier="storyBoardOneNav" automaticallyAdjustsScrollViewInsets="NO" id="RdG-Oo-mPh" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AoM-L1-EKb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
