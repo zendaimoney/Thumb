@@ -8,16 +8,70 @@
         <scene sceneID="IOd-e6-hCg">
             <objects>
                 <tableViewController id="9Ut-El-0Cv" customClass="ZDFinancialTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0An-B2-VQj">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="0An-B2-VQj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="o8v-C4-PLz">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="financialCell" rowHeight="80" id="o8v-C4-PLz" customClass="financialTableCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o8v-C4-PLz" id="NSg-uw-rfa">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_365" translatesAutoresizingMaskIntoConstraints="NO" id="8mQ-mf-GRD">
+                                            <rect key="frame" x="8" y="8" width="30" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="31" id="2e7-vW-zrW"/>
+                                                <constraint firstAttribute="width" constant="30" id="AfY-yC-fS9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="证大年丰" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljl-5G-MG0">
+                                            <rect key="frame" x="52" y="9" width="100" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起投金额  100000元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nk3-qP-sIv">
+                                            <rect key="frame" x="52" y="34" width="141" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="锁定期    365天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvY-HC-1Nw">
+                                            <rect key="frame" x="52" y="56" width="141" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10%-12%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlU-TA-z4U">
+                                            <rect key="frame" x="210" y="10" width="102" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="1" green="0.4549019608" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年化收益" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boz-q0-pJr">
+                                            <rect key="frame" x="240" y="34" width="72" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico_fav" translatesAutoresizingMaskIntoConstraints="NO" id="YlJ-pL-iYR">
+                                            <rect key="frame" x="298" y="56" width="14" height="15"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8mQ-mf-GRD" firstAttribute="leading" secondItem="NSg-uw-rfa" secondAttribute="leading" constant="8" id="3O8-wm-TxU"/>
+                                        <constraint firstItem="8mQ-mf-GRD" firstAttribute="top" secondItem="NSg-uw-rfa" secondAttribute="top" constant="8" id="RRf-Be-mNY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="investLabel" destination="nk3-qP-sIv" id="7Ej-Tg-7um"/>
+                                    <outlet property="investTimeLabel" destination="gvY-HC-1Nw" id="bvS-aB-zd1"/>
+                                    <outlet property="productImageView" destination="8mQ-mf-GRD" id="IUn-fC-EWb"/>
+                                    <outlet property="productNameLabel" destination="Ljl-5G-MG0" id="a25-hY-s2j"/>
+                                    <outlet property="shouYiLabel" destination="LlU-TA-z4U" id="nBD-4c-FWH"/>
+                                    <outlet property="smallImageView" destination="YlJ-pL-iYR" id="dPc-hx-koz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,7 +89,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5U-mC-Yml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1347" y="414"/>
+            <point key="canvasLocation" x="1347" y="406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fcP-mi-5LU">
@@ -57,4 +111,8 @@
             <point key="canvasLocation" x="916" y="414"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ico_365" width="30" height="31"/>
+        <image name="ico_fav" width="14" height="15"/>
+    </resources>
 </document>

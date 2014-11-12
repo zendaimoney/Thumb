@@ -9,8 +9,11 @@
 #import "ZDFinancialTableViewController.h"
 #import "ZDWebService.h"
 #import "AllCustomerCategoryHeaders.h"
+#import "financialTableCell.h"
 
 @interface ZDFinancialTableViewController ()<SSFSegmentControlDelegate>
+
+@property (strong, nonatomic) NSArray *arr;
 
 @end
 
@@ -19,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureView];
+    self.arr = @[@"1",@"2"];
 }
 
 - (void)configureView
@@ -43,6 +47,21 @@
             break;
     }
 }
+
+#pragma mark - tabbleView datasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.arr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellidentifier = @"financialCell";
+    financialTableCell *cell = [tableView dequeueReusableCellWithIdentifier:cellidentifier forIndexPath:indexPath];
+    return cell;
+}
+
 
 - (IBAction)test:(id)sender {
     [[ZDWebService sharedWebService] loginWithUserName:@"13174125879" password:@"123456" completion:^(NSError *error, NSDictionary *resultDic) {

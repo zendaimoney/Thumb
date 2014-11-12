@@ -30,6 +30,7 @@
 		81E64D451A1207270070BCD3 /* ZDWebserviceDataParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E64D411A1207270070BCD3 /* ZDWebserviceDataParse.m */; };
 		81E795CF1A1339B900B75715 /* SSFSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E795CD1A1339B900B75715 /* SSFSegmentControl.m */; };
 		81E795D01A1339B900B75715 /* SSFSegmentControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */; };
+		81E795D31A1346C300B75715 /* financialTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E795D21A1346C300B75715 /* financialTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		81E795CC1A1339B900B75715 /* SSFSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFSegmentControl.h; sourceTree = "<group>"; };
 		81E795CD1A1339B900B75715 /* SSFSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFSegmentControl.m; sourceTree = "<group>"; };
 		81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFSegmentControl.xib; sourceTree = "<group>"; };
+		81E795D11A1346C300B75715 /* financialTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = financialTableCell.h; sourceTree = "<group>"; };
+		81E795D21A1346C300B75715 /* financialTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = financialTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 				813D03541A105DE500F62E40 /* StoryboardOne.storyboard */,
 				813D03551A105DE500F62E40 /* ZDFinancialTableViewController.h */,
 				813D03561A105DE500F62E40 /* ZDFinancialTableViewController.m */,
+				81E795D11A1346C300B75715 /* financialTableCell.h */,
+				81E795D21A1346C300B75715 /* financialTableCell.m */,
 			);
 			path = Financial;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				81E795CF1A1339B900B75715 /* SSFSegmentControl.m in Sources */,
 				813D03671A105E0300F62E40 /* ZDMainTabbarController.m in Sources */,
 				81E36BE31A10913F00784D93 /* MBProgressHUD.m in Sources */,
+				81E795D31A1346C300B75715 /* financialTableCell.m in Sources */,
 				81E64D431A1207270070BCD3 /* ZDWebService+URLString.m in Sources */,
 				813D036B1A105E0300F62E40 /* ZDSettingTableViewController.m in Sources */,
 				813D031E1A10551400F62E40 /* main.m in Sources */,
