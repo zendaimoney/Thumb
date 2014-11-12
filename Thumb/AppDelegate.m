@@ -24,8 +24,21 @@
 
 - (void)setNavigationBarAndTabbar
 {
+    //设置tabbaritem
     [[UITabBarItem appearance] setTitleTextAttributes:@{
                                                         NSForegroundColorAttributeName:[UIColor colorWithRed:250/255.0 green:92/255.0 blue:87/255.0 alpha:1.0]} forState:UIControlStateSelected];
+    
+    //设置navigationbar
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bg_nav"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                           NSFontAttributeName:[UIFont systemFontOfSize:20]
+                                                           }];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    //设置statusbar
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 @end

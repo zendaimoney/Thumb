@@ -29,23 +29,28 @@
     
     self.viewControllers = @[nav1,nav2,nav3];
     
+    [self setCustomTabbar];
+}
+
+- (void)setCustomTabbar
+{
     for (int i = 0; i < self.tabBar.items.count; i++) {
         UITabBarItem *barItem = self.tabBar.items[i];
         switch (i) {
             case 0:
                 barItem.title = @"理财规划";
-                barItem.image = [UIImage imageNamed:@"ico_bottom_fortune"];
-                barItem.selectedImage = [UIImage imageNamed:@"ico_bottom_fortune_on"];
+                barItem.image = [[UIImage imageNamed:@"ico_bottom_fortune"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+                barItem.selectedImage = [[UIImage imageNamed:@"ico_bottom_fortune_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
                 break;
             case 1:
                 barItem.title = @"我的账户";
-                barItem.image = [UIImage imageNamed:@"ico_bottom_account"];
-                barItem.selectedImage = [UIImage imageNamed:@"ico_bottom_account_on"];
+                barItem.image = [[UIImage imageNamed:@"ico_bottom_account"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+                barItem.selectedImage = [[UIImage imageNamed:@"ico_bottom_account_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];;
                 break;
             case 2:
                 barItem.title = @"关于我们";
-                barItem.image = [UIImage imageNamed:@"icon_bottom_about"];
-                barItem.selectedImage = [UIImage imageNamed:@"icon_bottom_about_on"];
+                barItem.image = [[UIImage imageNamed:@"icon_bottom_about"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+                barItem.selectedImage = [[UIImage imageNamed:@"icon_bottom_about_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
                 break;
             default:
                 break;
