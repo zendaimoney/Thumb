@@ -31,6 +31,7 @@
 		81E795CF1A1339B900B75715 /* SSFSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E795CD1A1339B900B75715 /* SSFSegmentControl.m */; };
 		81E795D01A1339B900B75715 /* SSFSegmentControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */; };
 		81E795D31A1346C300B75715 /* financialTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E795D21A1346C300B75715 /* financialTableCell.m */; };
+		8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFSegmentControl.xib; sourceTree = "<group>"; };
 		81E795D11A1346C300B75715 /* financialTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = financialTableCell.h; sourceTree = "<group>"; };
 		81E795D21A1346C300B75715 /* financialTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = financialTableCell.m; sourceTree = "<group>"; };
+		8D071F3F1A1363710051FE04 /* ZDQuestionBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDQuestionBackViewController.h; sourceTree = "<group>"; };
+		8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDQuestionBackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 				813D03631A105E0300F62E40 /* StoryboardThree.storyboard */,
 				813D03641A105E0300F62E40 /* ZDSettingTableViewController.h */,
 				813D03651A105E0300F62E40 /* ZDSettingTableViewController.m */,
+				8D071F3F1A1363710051FE04 /* ZDQuestionBackViewController.h */,
+				8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 				81E64D451A1207270070BCD3 /* ZDWebserviceDataParse.m in Sources */,
 				81E36BE41A10913F00784D93 /* NSString+Tony.m in Sources */,
 				813D03581A105DE500F62E40 /* ZDFinancialTableViewController.m in Sources */,
+				8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */,
 				813D03211A10551400F62E40 /* AppDelegate.m in Sources */,
 				81E36BE51A10913F00784D93 /* GSReachability.m in Sources */,
 				81E795CF1A1339B900B75715 /* SSFSegmentControl.m in Sources */,
