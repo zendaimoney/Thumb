@@ -2,12 +2,12 @@
 //  ZDMyAccountTableViewController.h
 //  Thumb
 //
-//  Created by peter on 14/11/10.
+//  Created by peter on 14/11/13.
 //  Copyright (c) 2014年 peter. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ZDMyAccountTableViewController : UITableViewController
+@interface ZDMyAccountTableViewController : UIViewController
 
 @end

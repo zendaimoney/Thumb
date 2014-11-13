@@ -10,8 +10,9 @@
 #import "ZDFinancialTableViewController.h"
 #import "ZDMyAccountTableViewController.h"
 #import "ZDSettingTableViewController.h"
+#import "ZDLoginViewController.h"
 
-@interface ZDMainTabbarController ()
+@interface ZDMainTabbarController ()<UITabBarControllerDelegate,ZDLoginViewControllerDelegate>
 
 @end
 
@@ -60,7 +61,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.delegate = self;
+}
+
+#pragma mark - tabbar delegate
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    UINavigationController *nav = (UINavigationController *)viewController;
+    if ([[nav.viewControllers firstObject] isKindOfClass:[ZDMyAccountTableViewController class]]) {
+        NSString *userName = [[NSUserDefaults standardUserDefaults] objectForKey:DefaultUserNameKey];
+        if (userName.length) {
+            return YES;
+        } else return NO;
+    } else return YES;
+}
+   
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    if ([item.title isEqualToString:@"我的账户"]) {
+        NSString *userName = [[NSUserDefaults standardUserDefaults] objectForKey:DefaultUserNameKey];
+//        NSString *userPassword = [[NSUserDefaults standardUserDefaults] objectForKey:DefaultUserPasswordKey];
+        if (!userName.length) {
+            //未登陆
+            UINavigationController *loginNavigation = [self.storyboard instantiateViewControllerWithIdentifier:@"loginNavigation"];
+            ZDLoginViewController *loginViewController = (ZDLoginViewController *)[[loginNavigation viewControllers] firstObject];
+            loginViewController.delegate = self;
+            [self presentViewController:loginNavigation animated:YES completion:NULL];
+        }
+    }
+}
+
+#pragma mark - ZDLoginViewControllerDelegate
+
+- (void)loginViewControllerDidLoginSuccess:(ZDLoginViewController *)controller
+{
+    self.selectedIndex = 1;
+    [self.presentedViewController dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
