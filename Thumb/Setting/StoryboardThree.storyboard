@@ -115,7 +115,7 @@
         <!--关于我们-->
         <scene sceneID="9TX-3f-l0j">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="Ebj-Vb-8IN" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="aboutUsSB" hidesBottomBarWhenPushed="YES" id="Ebj-Vb-8IN" customClass="ZDAboutUsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="wF5-6r-WAv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,6 +242,9 @@
                                 <rect key="frame" x="16" y="72" width="288" height="243"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yvJ-Iy-2kt" id="Zmf-OS-qQE"/>
+                                </connections>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您想反馈的意见..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIz-dt-PTC">
                                 <rect key="frame" x="26" y="79" width="153" height="21"/>
