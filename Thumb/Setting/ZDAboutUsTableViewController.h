@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ZDAboutUsTableViewController : UITableViewController
-//@property (weak, nonatomic) IBOutlet UILabel *versionLab;
+@property (weak, nonatomic) IBOutlet UILabel *versionLab;
 
 @end

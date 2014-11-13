@@ -7,6 +7,7 @@
 //
 
 #import "ZDSettingTableViewController.h"
+#import "ZDWebViewController.h"
 
 @interface ZDSettingTableViewController ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0 && indexPath.row == 2) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"StoryboardThree" bundle:nil];
+        ZDWebViewController *webViewController = [storyboard instantiateViewControllerWithIdentifier:@"ZDWebViewController"];
+        webViewController.viewTitle = @"常见问题";
+        webViewController.onlineHtml = @"http://www.baidu.com";
+        [self.navigationController pushViewController:webViewController animated:YES];
+    }
 }
 
 @end

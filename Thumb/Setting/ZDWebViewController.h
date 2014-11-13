@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ZDWebViewController : UIViewController
+{
+    IBOutlet UIWebView* webView;
+}
+@property (strong, nonatomic) NSString *viewTitle;
+@property (strong, nonatomic) NSString *localHtml;
+@property (strong, nonatomic) NSString *onlineHtml;
 
 @end

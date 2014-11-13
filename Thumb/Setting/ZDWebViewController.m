@@ -16,22 +16,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.navigationItem.title = _viewTitle;
+    if ([_localHtml isEqualToString:@""] || _localHtml == nil) {
+        [self loadOnlineHtml:_onlineHtml];
+    }
+    if ([_onlineHtml isEqualToString:@""] || _onlineHtml == nil) {
+        [self loadLocalHtml:_localHtml];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)loadLocalHtml:(NSString *)htmlName
+{
+    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:htmlName ofType:@"html" inDirectory:@"www"];
+    NSURL *htmlUrl = [NSURL fileURLWithPath:htmlPath];
+    webView.scalesPageToFit = YES;
+    webView.scrollView.bounces = NO;
+    [webView setOpaque:NO];
+    [webView setBackgroundColor:[UIColor clearColor]];
+    [webView loadRequest:[NSURLRequest requestWithURL:htmlUrl]];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)loadOnlineHtml:(NSString *)urlParam{
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlParam]];
+    [webView loadRequest:request];
 }
-*/
 
 @end

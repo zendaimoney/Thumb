@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--设置-->
@@ -72,9 +73,6 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="9W3-dw-fYR" kind="show" identifier="FAQ" id="pQo-f0-DB2"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="54" id="0Xa-th-djA">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -114,7 +112,7 @@
         <!--关于我们-->
         <scene sceneID="9TX-3f-l0j">
             <objects>
-                <tableViewController storyboardIdentifier="aboutUsSB" hidesBottomBarWhenPushed="YES" id="Ebj-Vb-8IN" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="aboutUsSB" hidesBottomBarWhenPushed="YES" id="Ebj-Vb-8IN" customClass="ZDAboutUsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="wF5-6r-WAv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,15 +197,18 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="关于我们" id="bJ9-Yx-OFJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="versionLab" destination="uDc-OA-JFc" id="rt7-0b-VSy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mD2-Vv-TYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="735"/>
+            <point key="canvasLocation" x="1690" y="61"/>
         </scene>
         <!--常见问题-->
         <scene sceneID="1WM-56-9Jc">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="9W3-dw-fYR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZDWebViewController" hidesBottomBarWhenPushed="YES" id="9W3-dw-fYR" customClass="ZDWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vu0-kt-fjS"/>
                         <viewControllerLayoutGuide type="bottom" id="rMn-2R-Kl7"/>
@@ -215,15 +216,24 @@
                     <view key="view" contentMode="scaleToFill" id="lza-Lr-6VR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6w-Uu-D1J">
+                                <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="常见问题" id="xul-Ug-E0l"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="a6w-Uu-D1J" id="j1P-tB-VKl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzr-h8-D32" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="46"/>
+            <point key="canvasLocation" x="1250" y="348"/>
         </scene>
         <!--意见反馈-->
         <scene sceneID="e7I-Vy-mZf">
@@ -237,35 +247,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9i-1R-lyh">
-                                <rect key="frame" x="16" y="72" width="288" height="243"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udB-x7-wqJ">
+                                <rect key="frame" x="16" y="72" width="288" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="243" id="TXB-cb-g5e"/>
+                                    <constraint firstAttribute="height" constant="128" id="h4E-Tr-66g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <outlet property="delegate" destination="yvJ-Iy-2kt" id="Zmf-OS-qQE"/>
+                                    <outlet property="delegate" destination="yvJ-Iy-2kt" id="U73-sd-mNZ"/>
                                 </connections>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您想反馈的意见..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIz-dt-PTC">
-                                <rect key="frame" x="26" y="79" width="153" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="KIh-m8-GcK"/>
-                                    <constraint firstAttribute="width" constant="153" id="MpV-y1-piI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您想要反馈的意见..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSo-6E-eNv">
+                                <rect key="frame" x="22" y="77" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PIz-dt-PTC" firstAttribute="top" secondItem="ePQ-HA-Xm9" secondAttribute="bottom" constant="15" id="Dhr-FS-gA5"/>
-                            <constraint firstItem="Y9i-1R-lyh" firstAttribute="leading" secondItem="aKk-fY-TCF" secondAttribute="leading" constant="16" id="Eab-CU-HJt"/>
-                            <constraint firstAttribute="trailing" secondItem="Y9i-1R-lyh" secondAttribute="trailing" constant="16" id="Egv-bH-U2S"/>
-                            <constraint firstItem="Y9i-1R-lyh" firstAttribute="top" secondItem="ePQ-HA-Xm9" secondAttribute="bottom" constant="8" id="lhC-Qg-sKP"/>
-                            <constraint firstItem="PIz-dt-PTC" firstAttribute="leading" secondItem="aKk-fY-TCF" secondAttribute="leading" constant="26" id="wg1-dW-5Z1"/>
+                            <constraint firstItem="udB-x7-wqJ" firstAttribute="trailing" secondItem="aKk-fY-TCF" secondAttribute="trailingMargin" id="6zb-jm-47h"/>
+                            <constraint firstItem="udB-x7-wqJ" firstAttribute="leading" secondItem="aKk-fY-TCF" secondAttribute="leadingMargin" id="oRK-R1-LKD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="意见反馈" id="pEp-aL-ySm">
@@ -274,7 +277,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="placeholderLab" destination="PIz-dt-PTC" id="aib-Ye-E4l"/>
+                        <outlet property="placeholderLab" destination="SSo-6E-eNv" id="pky-VQ-B9X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAe-1c-kxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
