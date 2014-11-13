@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _versionLab.text = [NSString stringWithFormat:@"V %@", [self currentAppVersion]];
+//    _versionLab.text = [NSString stringWithFormat:@"V %@", [self currentAppVersion]];
     
 }
 

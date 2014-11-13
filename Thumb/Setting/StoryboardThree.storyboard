@@ -115,7 +115,7 @@
         <!--关于我们-->
         <scene sceneID="9TX-3f-l0j">
             <objects>
-                <tableViewController storyboardIdentifier="aboutUsSB" hidesBottomBarWhenPushed="YES" id="Ebj-Vb-8IN" customClass="ZDAboutUsTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="aboutUsSB" hidesBottomBarWhenPushed="YES" id="Ebj-Vb-8IN" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="wF5-6r-WAv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
