@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--设置-->
@@ -203,7 +202,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mD2-Vv-TYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="383"/>
+            <point key="canvasLocation" x="1690" y="735"/>
         </scene>
         <!--常见问题-->
         <scene sceneID="1WM-56-9Jc">
@@ -224,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzr-h8-D32" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="346"/>
+            <point key="canvasLocation" x="1690" y="46"/>
         </scene>
         <!--意见反馈-->
         <scene sceneID="e7I-Vy-mZf">
@@ -238,16 +237,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y9i-1R-lyh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9i-1R-lyh">
                                 <rect key="frame" x="16" y="72" width="288" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="TXB-cb-g5e"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outlet property="delegate" destination="yvJ-Iy-2kt" id="Zmf-OS-qQE"/>
                                 </connections>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您想反馈的意见..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIz-dt-PTC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您想反馈的意见..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIz-dt-PTC">
                                 <rect key="frame" x="26" y="79" width="153" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KIh-m8-GcK"/>
+                                    <constraint firstAttribute="width" constant="153" id="MpV-y1-piI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -255,8 +261,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Y9i-1R-lyh" firstAttribute="trailing" secondItem="aKk-fY-TCF" secondAttribute="trailingMargin" id="YfW-5R-B0k"/>
-                            <constraint firstItem="Y9i-1R-lyh" firstAttribute="leading" secondItem="aKk-fY-TCF" secondAttribute="leadingMargin" id="oEq-GZ-hb4"/>
+                            <constraint firstItem="PIz-dt-PTC" firstAttribute="top" secondItem="ePQ-HA-Xm9" secondAttribute="bottom" constant="15" id="Dhr-FS-gA5"/>
+                            <constraint firstItem="Y9i-1R-lyh" firstAttribute="leading" secondItem="aKk-fY-TCF" secondAttribute="leading" constant="16" id="Eab-CU-HJt"/>
+                            <constraint firstAttribute="trailing" secondItem="Y9i-1R-lyh" secondAttribute="trailing" constant="16" id="Egv-bH-U2S"/>
+                            <constraint firstItem="Y9i-1R-lyh" firstAttribute="top" secondItem="ePQ-HA-Xm9" secondAttribute="bottom" constant="8" id="lhC-Qg-sKP"/>
+                            <constraint firstItem="PIz-dt-PTC" firstAttribute="leading" secondItem="aKk-fY-TCF" secondAttribute="leading" constant="26" id="wg1-dW-5Z1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="意见反馈" id="pEp-aL-ySm">
@@ -270,12 +279,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAe-1c-kxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1898" y="-21"/>
+            <point key="canvasLocation" x="1690" y="-603"/>
         </scene>
         <!--查找门店-->
         <scene sceneID="xI1-iF-onH">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="tzs-iy-EMr" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="tzs-iy-EMr" customClass="ZDLookForStroesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p6w-Wh-v6g"/>
                         <viewControllerLayoutGuide type="bottom" id="67O-ZG-mi4"/>
@@ -284,20 +293,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qL-aI-tla">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qL-aI-tla">
                                 <rect key="frame" x="126" y="403" width="69" height="30"/>
                                 <state key="normal" title="查找门店"/>
                                 <connections>
                                     <segue destination="d9a-5K-6ml" kind="show" id="0ZE-pz-hZq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="总部地址：上海市浦东新区丁香路1208号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49t-fa-aZG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="总部地址：上海市浦东新区丁香路1208号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49t-fa-aZG">
                                 <rect key="frame" x="16" y="303" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="联系我们：400-821-6888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-Xl-3Ma">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="联系我们：400-821-6888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-Xl-3Ma">
                                 <rect key="frame" x="16" y="332" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -305,17 +314,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="49t-fa-aZG" firstAttribute="leading" secondItem="BBO-8i-0cm" secondAttribute="leadingMargin" id="Ahw-ca-vyy"/>
-                            <constraint firstItem="1qL-aI-tla" firstAttribute="top" secondItem="49t-fa-aZG" secondAttribute="bottom" constant="79" id="EDA-T4-Ib3"/>
-                            <constraint firstItem="67O-ZG-mi4" firstAttribute="top" secondItem="1qL-aI-tla" secondAttribute="bottom" constant="135" id="GPF-f5-tDn"/>
-                            <constraint firstItem="1qL-aI-tla" firstAttribute="leading" secondItem="BBO-8i-0cm" secondAttribute="leadingMargin" constant="110" id="Gc4-d4-Tgb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1qL-aI-tla" secondAttribute="trailing" constant="109" id="KFg-Bk-F8h"/>
-                            <constraint firstItem="7IE-Xl-3Ma" firstAttribute="leading" secondItem="BBO-8i-0cm" secondAttribute="leadingMargin" id="U4O-nU-3n1"/>
-                            <constraint firstItem="1qL-aI-tla" firstAttribute="top" secondItem="7IE-Xl-3Ma" secondAttribute="bottom" constant="50" id="Xp5-q2-7bm"/>
-                            <constraint firstItem="7IE-Xl-3Ma" firstAttribute="trailing" secondItem="BBO-8i-0cm" secondAttribute="trailingMargin" id="Xqa-IY-Whk"/>
-                            <constraint firstItem="49t-fa-aZG" firstAttribute="trailing" secondItem="BBO-8i-0cm" secondAttribute="trailingMargin" id="gJN-Y3-ICy"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="查找门店" id="Aaq-VZ-mg2"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -323,12 +321,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcg-pz-ZNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1720" y="-653"/>
+            <point key="canvasLocation" x="1690" y="-1263"/>
         </scene>
         <!--附近网点-->
         <scene sceneID="gYz-YB-Qz5">
             <objects>
-                <tableViewController id="d9a-5K-6ml" sceneMemberID="viewController">
+                <tableViewController id="d9a-5K-6ml" customClass="ZDNearbyStoresTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DY0-cS-VdW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -346,13 +344,56 @@
                             <outlet property="delegate" destination="d9a-5K-6ml" id="Qmq-9F-UvM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="附近网点" id="jTJ-2l-2da"/>
+                    <navigationItem key="navigationItem" title="附近网点" id="jTJ-2l-2da">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ERG-J0-JKl">
+                            <connections>
+                                <segue destination="Lim-T9-BQk" kind="show" identifier="showMap" id="TH2-zW-ahI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5g-4h-gYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2237" y="-381"/>
+            <point key="canvasLocation" x="2197" y="-1263"/>
+        </scene>
+        <!--地图显示-->
+        <scene sceneID="OBx-V3-agJ">
+            <objects>
+                <viewController id="Lim-T9-BQk" customClass="ZDMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oss-i7-Ak7"/>
+                        <viewControllerLayoutGuide type="bottom" id="iLG-Cd-M9g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ir0-hn-C05">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQ4-Mi-SOz">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Lim-T9-BQk" id="oBp-mb-11d"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LQ4-Mi-SOz" firstAttribute="top" secondItem="Oss-i7-Ak7" secondAttribute="bottom" id="3SP-MP-fpC"/>
+                            <constraint firstItem="LQ4-Mi-SOz" firstAttribute="leading" secondItem="Ir0-hn-C05" secondAttribute="leading" id="AU3-zn-JsP"/>
+                            <constraint firstAttribute="trailing" secondItem="LQ4-Mi-SOz" secondAttribute="trailing" id="Gwl-ZQ-WVg"/>
+                            <constraint firstItem="iLG-Cd-M9g" firstAttribute="top" secondItem="LQ4-Mi-SOz" secondAttribute="bottom" id="Jpf-ld-sf4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="地图显示" id="0An-zs-cCb"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mapView" destination="LQ4-Mi-SOz" id="2m3-c7-vEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5JI-ca-eWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2635" y="-1263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DSx-eG-fxZ">
@@ -371,7 +412,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIP-HA-xbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="-271"/>
+            <point key="canvasLocation" x="724" y="-356"/>
         </scene>
     </scenes>
     <resources>
