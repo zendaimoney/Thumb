@@ -20,6 +20,12 @@
 		813D03691A105E0300F62E40 /* ZDMyAccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D03611A105E0300F62E40 /* ZDMyAccountTableViewController.m */; };
 		813D036A1A105E0300F62E40 /* StoryboardThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813D03631A105E0300F62E40 /* StoryboardThree.storyboard */; };
 		813D036B1A105E0300F62E40 /* ZDSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D03651A105E0300F62E40 /* ZDSettingTableViewController.m */; };
+		81E102321A143F7B0059BA60 /* ZDLookForStroesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E102311A143F7B0059BA60 /* ZDLookForStroesViewController.m */; };
+		81E102351A1443A70059BA60 /* ZDNearbyStoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E102341A1443A70059BA60 /* ZDNearbyStoresTableViewController.m */; };
+		81E102371A1443F50059BA60 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E102361A1443F50059BA60 /* CoreLocation.framework */; };
+		81E102391A1443FD0059BA60 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E102381A1443FD0059BA60 /* MapKit.framework */; };
+		81E1023C1A1449210059BA60 /* ZDMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E1023B1A1449210059BA60 /* ZDMapViewController.m */; };
+		81E1023F1A144ACE0059BA60 /* MyAnnotaion.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E1023E1A144ACE0059BA60 /* MyAnnotaion.m */; };
 		81E36BE31A10913F00784D93 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E36BDB1A10913F00784D93 /* MBProgressHUD.m */; };
 		81E36BE41A10913F00784D93 /* NSString+Tony.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E36BDD1A10913F00784D93 /* NSString+Tony.m */; };
 		81E36BE51A10913F00784D93 /* GSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E36BE01A10913F00784D93 /* GSReachability.m */; };
@@ -67,6 +73,16 @@
 		813D03631A105E0300F62E40 /* StoryboardThree.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardThree.storyboard; sourceTree = "<group>"; };
 		813D03641A105E0300F62E40 /* ZDSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSettingTableViewController.h; sourceTree = "<group>"; };
 		813D03651A105E0300F62E40 /* ZDSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSettingTableViewController.m; sourceTree = "<group>"; };
+		81E102301A143F7B0059BA60 /* ZDLookForStroesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLookForStroesViewController.h; sourceTree = "<group>"; };
+		81E102311A143F7B0059BA60 /* ZDLookForStroesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLookForStroesViewController.m; sourceTree = "<group>"; };
+		81E102331A1443A70059BA60 /* ZDNearbyStoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDNearbyStoresTableViewController.h; sourceTree = "<group>"; };
+		81E102341A1443A70059BA60 /* ZDNearbyStoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDNearbyStoresTableViewController.m; sourceTree = "<group>"; };
+		81E102361A1443F50059BA60 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		81E102381A1443FD0059BA60 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		81E1023A1A1449210059BA60 /* ZDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMapViewController.h; sourceTree = "<group>"; };
+		81E1023B1A1449210059BA60 /* ZDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMapViewController.m; sourceTree = "<group>"; };
+		81E1023D1A144ACE0059BA60 /* MyAnnotaion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotaion.h; sourceTree = "<group>"; };
+		81E1023E1A144ACE0059BA60 /* MyAnnotaion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotaion.m; sourceTree = "<group>"; };
 		81E36BDA1A10913F00784D93 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		81E36BDB1A10913F00784D93 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		81E36BDC1A10913F00784D93 /* NSString+Tony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tony.h"; sourceTree = "<group>"; };
@@ -98,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E102391A1443FD0059BA60 /* MapKit.framework in Frameworks */,
+				81E102371A1443F50059BA60 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +132,8 @@
 		813D030F1A10551400F62E40 = {
 			isa = PBXGroup;
 			children = (
+				81E102381A1443FD0059BA60 /* MapKit.framework */,
+				81E102361A1443F50059BA60 /* CoreLocation.framework */,
 				813D031A1A10551400F62E40 /* Thumb */,
 				813D03341A10551400F62E40 /* ThumbTests */,
 				813D03191A10551400F62E40 /* Products */,
@@ -221,6 +241,14 @@
 				813D03651A105E0300F62E40 /* ZDSettingTableViewController.m */,
 				8D071F3F1A1363710051FE04 /* ZDQuestionBackViewController.h */,
 				8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */,
+				81E102301A143F7B0059BA60 /* ZDLookForStroesViewController.h */,
+				81E102311A143F7B0059BA60 /* ZDLookForStroesViewController.m */,
+				81E102331A1443A70059BA60 /* ZDNearbyStoresTableViewController.h */,
+				81E102341A1443A70059BA60 /* ZDNearbyStoresTableViewController.m */,
+				81E1023A1A1449210059BA60 /* ZDMapViewController.h */,
+				81E1023B1A1449210059BA60 /* ZDMapViewController.m */,
+				81E1023D1A144ACE0059BA60 /* MyAnnotaion.h */,
+				81E1023E1A144ACE0059BA60 /* MyAnnotaion.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -390,6 +418,7 @@
 			files = (
 				81E64D441A1207270070BCD3 /* ZDWebService.m in Sources */,
 				81E64D421A1207270070BCD3 /* ZDNSURLSession.m in Sources */,
+				81E102351A1443A70059BA60 /* ZDNearbyStoresTableViewController.m in Sources */,
 				81E36BE61A10913F00784D93 /* Reachability.m in Sources */,
 				813D03691A105E0300F62E40 /* ZDMyAccountTableViewController.m in Sources */,
 				81E64D451A1207270070BCD3 /* ZDWebserviceDataParse.m in Sources */,
@@ -402,9 +431,12 @@
 				813D03671A105E0300F62E40 /* ZDMainTabbarController.m in Sources */,
 				81E36BE31A10913F00784D93 /* MBProgressHUD.m in Sources */,
 				81E795D31A1346C300B75715 /* financialTableCell.m in Sources */,
+				81E1023C1A1449210059BA60 /* ZDMapViewController.m in Sources */,
 				81E64D431A1207270070BCD3 /* ZDWebService+URLString.m in Sources */,
 				813D036B1A105E0300F62E40 /* ZDSettingTableViewController.m in Sources */,
 				813D031E1A10551400F62E40 /* main.m in Sources */,
+				81E102321A143F7B0059BA60 /* ZDLookForStroesViewController.m in Sources */,
+				81E1023F1A144ACE0059BA60 /* MyAnnotaion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

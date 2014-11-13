@@ -38,7 +38,7 @@
         UITabBarItem *barItem = self.tabBar.items[i];
         switch (i) {
             case 0:
-                barItem.title = @"理财规划";
+                barItem.title = @"我的理财";
                 barItem.image = [[UIImage imageNamed:@"ico_bottom_fortune"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
                 barItem.selectedImage = [[UIImage imageNamed:@"ico_bottom_fortune_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
                 break;
@@ -48,7 +48,7 @@
                 barItem.selectedImage = [[UIImage imageNamed:@"ico_bottom_account_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];;
                 break;
             case 2:
-                barItem.title = @"关于我们";
+                barItem.title = @"设置";
                 barItem.image = [[UIImage imageNamed:@"icon_bottom_about"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
                 barItem.selectedImage = [[UIImage imageNamed:@"icon_bottom_about_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
                 break;
