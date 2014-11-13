@@ -7,6 +7,7 @@
 //
 
 #import "ZDRegisterTableViewController.h"
+#import "SSFShowSimpleAlert.h"
 #define DefaultMaxLength   11
 #define IdCardLength 18
 @interface ZDRegisterTableViewController ()<UITextFieldDelegate>
@@ -22,14 +23,17 @@
     _errorOrRightImg3.hidden = YES;
 }
 
-- (void)checkParam{
-    if (_phoneNumTfd == nil || [_phoneNumTfd.text isEqualToString:@""]) {
-        return;
-    } else if(_checkCodeTfd == nil || [_checkCodeTfd.text isEqualToString:@""]){
-        return;
-    } else if(_passwordTfd == nil || [_passwordTfd.text isEqualToString:@""]){
-        return;
-    }
+- (BOOL)checkParam{
+    if (!self.phoneNumTfd.text.length) {
+        [SSFShowSimpleAlert showSimpleAlertWithTitle:@"" message:@"手机号不能为空"];
+        return NO;
+    } else if(!self.checkCodeTfd.text.length){
+        [SSFShowSimpleAlert showSimpleAlertWithTitle:@"" message:@"验证码不能为空"];
+        return NO;
+    } else if(!self.passwordTfd.text.length){
+        [SSFShowSimpleAlert showSimpleAlertWithTitle:@"" message:@"密码不能为空"];
+        return NO;
+    } else return YES;
 }
 
 #pragma mark - UITextFielDelegate
