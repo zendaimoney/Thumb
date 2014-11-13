@@ -14,5 +14,6 @@
 #import "GSReachability.h"
 #import "Reachability.h"
 #import "SSFSegmentControl.h"
+#import "SSFShowSimpleAlert.h"
 
 #endif

@@ -17,7 +17,6 @@
 		813D03661A105E0300F62E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813D035A1A105E0300F62E40 /* Main.storyboard */; };
 		813D03671A105E0300F62E40 /* ZDMainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D035C1A105E0300F62E40 /* ZDMainTabbarController.m */; };
 		813D03681A105E0300F62E40 /* StoryboardTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813D035F1A105E0300F62E40 /* StoryboardTwo.storyboard */; };
-		813D03691A105E0300F62E40 /* ZDMyAccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D03611A105E0300F62E40 /* ZDMyAccountTableViewController.m */; };
 		813D036A1A105E0300F62E40 /* StoryboardThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813D03631A105E0300F62E40 /* StoryboardThree.storyboard */; };
 		813D036B1A105E0300F62E40 /* ZDSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D03651A105E0300F62E40 /* ZDSettingTableViewController.m */; };
 		81E102371A1443F50059BA60 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E102361A1443F50059BA60 /* CoreLocation.framework */; };
@@ -70,8 +69,6 @@
 		813D035B1A105E0300F62E40 /* ZDMainTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMainTabbarController.h; sourceTree = "<group>"; };
 		813D035C1A105E0300F62E40 /* ZDMainTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMainTabbarController.m; sourceTree = "<group>"; };
 		813D035F1A105E0300F62E40 /* StoryboardTwo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardTwo.storyboard; sourceTree = "<group>"; };
-		813D03601A105E0300F62E40 /* ZDMyAccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMyAccountTableViewController.h; sourceTree = "<group>"; };
-		813D03611A105E0300F62E40 /* ZDMyAccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMyAccountTableViewController.m; sourceTree = "<group>"; };
 		813D03631A105E0300F62E40 /* StoryboardThree.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardThree.storyboard; sourceTree = "<group>"; };
 		813D03641A105E0300F62E40 /* ZDSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSettingTableViewController.h; sourceTree = "<group>"; };
 		813D03651A105E0300F62E40 /* ZDSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSettingTableViewController.m; sourceTree = "<group>"; };
@@ -217,6 +214,8 @@
 				813D035A1A105E0300F62E40 /* Main.storyboard */,
 				813D035B1A105E0300F62E40 /* ZDMainTabbarController.h */,
 				813D035C1A105E0300F62E40 /* ZDMainTabbarController.m */,
+				81E1024C1A145CB50059BA60 /* ZDLoginViewController.h */,
+				81E1024D1A145CB50059BA60 /* ZDLoginViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -233,8 +232,10 @@
 			isa = PBXGroup;
 			children = (
 				813D035F1A105E0300F62E40 /* StoryboardTwo.storyboard */,
-				813D03601A105E0300F62E40 /* ZDMyAccountTableViewController.h */,
-				813D03611A105E0300F62E40 /* ZDMyAccountTableViewController.m */,
+				81E102521A1494E10059BA60 /* ZDMyAccountTableViewController.h */,
+				81E102531A1494E10059BA60 /* ZDMyAccountTableViewController.m */,
+				81E102551A14963C0059BA60 /* MyAccountTableViewCell.h */,
+				81E102561A14963C0059BA60 /* MyAccountTableViewCell.m */,
 			);
 			path = MyAccount;
 			sourceTree = "<group>";
@@ -242,6 +243,14 @@
 		813D03621A105E0300F62E40 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				81E102401A1459F70059BA60 /* MyAnnotaion.h */,
+				81E102411A1459F70059BA60 /* MyAnnotaion.m */,
+				81E102421A1459F70059BA60 /* ZDLookForStroesViewController.h */,
+				81E102431A1459F70059BA60 /* ZDLookForStroesViewController.m */,
+				81E102441A1459F70059BA60 /* ZDMapViewController.h */,
+				81E102451A1459F70059BA60 /* ZDMapViewController.m */,
+				81E102461A1459F70059BA60 /* ZDNearbyStoresTableViewController.h */,
+				81E102471A1459F70059BA60 /* ZDNearbyStoresTableViewController.m */,
 				813D03631A105E0300F62E40 /* StoryboardThree.storyboard */,
 				8D071F571A1457D20051FE04 /* MyAnnotaion.h */,
 				8D071F581A1457D20051FE04 /* MyAnnotaion.m */,
@@ -268,9 +277,11 @@
 			children = (
 				81E795CB1A1339B900B75715 /* SSFSegmentedControl */,
 				81E36BD91A10913F00784D93 /* MBProgressHUD */,
+				81E36BDE1A10913F00784D93 /* Reachability */,
+				81E1024F1A1461480059BA60 /* SSFShowSimpleAlert.h */,
+				81E102501A1461480059BA60 /* SSFShowSimpleAlert.m */,
 				81E36BDC1A10913F00784D93 /* NSString+Tony.h */,
 				81E36BDD1A10913F00784D93 /* NSString+Tony.m */,
-				81E36BDE1A10913F00784D93 /* Reachability */,
 				81E36BE71A10919100784D93 /* AllCustomerCategoryHeaders.h */,
 			);
 			path = customerCategory;
@@ -426,14 +437,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E102541A1494E10059BA60 /* ZDMyAccountTableViewController.m in Sources */,
+				81E102571A14963C0059BA60 /* MyAccountTableViewCell.m in Sources */,
 				81E64D441A1207270070BCD3 /* ZDWebService.m in Sources */,
 				81E64D421A1207270070BCD3 /* ZDNSURLSession.m in Sources */,
 				81E36BE61A10913F00784D93 /* Reachability.m in Sources */,
-				813D03691A105E0300F62E40 /* ZDMyAccountTableViewController.m in Sources */,
 				81E64D451A1207270070BCD3 /* ZDWebserviceDataParse.m in Sources */,
 				8D071F561A1450220051FE04 /* ZDWebViewController.m in Sources */,
 				81E36BE41A10913F00784D93 /* NSString+Tony.m in Sources */,
 				813D03581A105DE500F62E40 /* ZDFinancialTableViewController.m in Sources */,
+				81E1024E1A145CB50059BA60 /* ZDLoginViewController.m in Sources */,
 				8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */,
 				8D071F601A1457D20051FE04 /* ZDLookForStroesViewController.m in Sources */,
 				813D03211A10551400F62E40 /* AppDelegate.m in Sources */,
