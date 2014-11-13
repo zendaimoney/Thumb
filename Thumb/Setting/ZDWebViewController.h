@@ -12,8 +12,8 @@
 {
     IBOutlet UIWebView* webView;
 }
-@property (strong, nonatomic) NSString *viewTitle;
-@property (strong, nonatomic) NSString *localHtml;
-@property (strong, nonatomic) NSString *onlineHtml;
+@property (weak, nonatomic) NSString *viewTitle;
+@property (weak, nonatomic) NSString *localHtml;
+@property (weak, nonatomic) NSString *onlineHtml;
 
 @end
