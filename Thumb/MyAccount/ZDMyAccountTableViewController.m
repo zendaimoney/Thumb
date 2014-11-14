@@ -22,9 +22,9 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewWillDisappear:animated];
     self.navigationController.navigationBarHidden = NO;
 }
 
@@ -72,6 +72,8 @@
     
     if (indexPath.row == 1) {
         [self performSegueWithIdentifier:@"showTradeDetail" sender:self];
+    }  else if (indexPath.row == 2) {
+        [self performSegueWithIdentifier:@"showSafe" sender:self];
     }
 }
 

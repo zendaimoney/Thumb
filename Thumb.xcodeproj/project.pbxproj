@@ -36,6 +36,9 @@
 		81F772131A15D194006A0347 /* TradeDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F772121A15D194006A0347 /* TradeDetailTableViewCell.m */; };
 		81F772161A15DE22006A0347 /* ZDOffLineProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F772151A15DE22006A0347 /* ZDOffLineProductViewController.m */; };
 		81F772191A15E349006A0347 /* ZDRegisterNextTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F772181A15E349006A0347 /* ZDRegisterNextTableViewController.m */; };
+		81F772201A15E712006A0347 /* SSFPasswordGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F7721C1A15E712006A0347 /* SSFPasswordGestureView.m */; };
+		81F772211A15E712006A0347 /* SSFPasswordGestureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F7721D1A15E712006A0347 /* SSFPasswordGestureView.xib */; };
+		81F772221A15E712006A0347 /* SSFPathLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F7721F1A15E712006A0347 /* SSFPathLineLayer.m */; };
 		8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */; };
 		8D071F531A1442ED0051FE04 /* ZDAboutUsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F521A1442ED0051FE04 /* ZDAboutUsTableViewController.m */; };
 		8D071F561A1450220051FE04 /* ZDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F551A1450220051FE04 /* ZDWebViewController.m */; };
@@ -114,6 +117,11 @@
 		81F772151A15DE22006A0347 /* ZDOffLineProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDOffLineProductViewController.m; sourceTree = "<group>"; };
 		81F772171A15E349006A0347 /* ZDRegisterNextTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDRegisterNextTableViewController.h; sourceTree = "<group>"; };
 		81F772181A15E349006A0347 /* ZDRegisterNextTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDRegisterNextTableViewController.m; sourceTree = "<group>"; };
+		81F7721B1A15E712006A0347 /* SSFPasswordGestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFPasswordGestureView.h; sourceTree = "<group>"; };
+		81F7721C1A15E712006A0347 /* SSFPasswordGestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFPasswordGestureView.m; sourceTree = "<group>"; };
+		81F7721D1A15E712006A0347 /* SSFPasswordGestureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFPasswordGestureView.xib; sourceTree = "<group>"; };
+		81F7721E1A15E712006A0347 /* SSFPathLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFPathLineLayer.h; sourceTree = "<group>"; };
+		81F7721F1A15E712006A0347 /* SSFPathLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFPathLineLayer.m; sourceTree = "<group>"; };
 		8D071F3F1A1363710051FE04 /* ZDQuestionBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDQuestionBackViewController.h; sourceTree = "<group>"; };
 		8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDQuestionBackViewController.m; sourceTree = "<group>"; };
 		8D071F511A1442ED0051FE04 /* ZDAboutUsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDAboutUsTableViewController.h; sourceTree = "<group>"; };
@@ -309,6 +317,7 @@
 		81E36BD81A1090E300784D93 /* customerCategory */ = {
 			isa = PBXGroup;
 			children = (
+				81F7721A1A15E712006A0347 /* SSFGesturePassword */,
 				81E795CB1A1339B900B75715 /* SSFSegmentedControl */,
 				81E36BD91A10913F00784D93 /* MBProgressHUD */,
 				81E36BDE1A10913F00784D93 /* Reachability */,
@@ -364,6 +373,18 @@
 				81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */,
 			);
 			path = SSFSegmentedControl;
+			sourceTree = "<group>";
+		};
+		81F7721A1A15E712006A0347 /* SSFGesturePassword */ = {
+			isa = PBXGroup;
+			children = (
+				81F7721B1A15E712006A0347 /* SSFPasswordGestureView.h */,
+				81F7721C1A15E712006A0347 /* SSFPasswordGestureView.m */,
+				81F7721D1A15E712006A0347 /* SSFPasswordGestureView.xib */,
+				81F7721E1A15E712006A0347 /* SSFPathLineLayer.h */,
+				81F7721F1A15E712006A0347 /* SSFPathLineLayer.m */,
+			);
+			path = SSFGesturePassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +472,7 @@
 				813D036A1A105E0300F62E40 /* StoryboardThree.storyboard in Resources */,
 				813D03571A105DE500F62E40 /* StoryboardOne.storyboard in Resources */,
 				813D032C1A10551400F62E40 /* LaunchScreen.xib in Resources */,
+				81F772211A15E712006A0347 /* SSFPasswordGestureView.xib in Resources */,
 				813D03291A10551400F62E40 /* Images.xcassets in Resources */,
 				813D03661A105E0300F62E40 /* Main.storyboard in Resources */,
 				813D03681A105E0300F62E40 /* StoryboardTwo.storyboard in Resources */,
@@ -479,11 +501,13 @@
 				8D071F671A149BA50051FE04 /* MyAccountTableViewCell.m in Sources */,
 				81F772191A15E349006A0347 /* ZDRegisterNextTableViewController.m in Sources */,
 				81F772101A15D145006A0347 /* ZDTradeDetailTableViewController.m in Sources */,
+				81F772221A15E712006A0347 /* SSFPathLineLayer.m in Sources */,
 				81E64D451A1207270070BCD3 /* ZDWebserviceDataParse.m in Sources */,
 				8D071F561A1450220051FE04 /* ZDWebViewController.m in Sources */,
 				81E36BE41A10913F00784D93 /* NSString+Tony.m in Sources */,
 				813D03581A105DE500F62E40 /* ZDFinancialTableViewController.m in Sources */,
 				8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */,
+				81F772201A15E712006A0347 /* SSFPasswordGestureView.m in Sources */,
 				8D071F601A1457D20051FE04 /* ZDLookForStroesViewController.m in Sources */,
 				81F772161A15DE22006A0347 /* ZDOffLineProductViewController.m in Sources */,
 				8D071F6E1A149BCB0051FE04 /* SSFShowSimpleAlert.m in Sources */,
