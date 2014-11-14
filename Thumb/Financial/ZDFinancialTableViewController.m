@@ -62,6 +62,13 @@
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self performSegueWithIdentifier:@"showOffLineProduct" sender:self];
+}
 
 - (IBAction)test:(id)sender {
 //    [[ZDWebService sharedWebService] loginWithUserName:@"13174125879" password:@"123456" completion:^(NSError *error, NSDictionary *resultDic) {
