@@ -16,7 +16,7 @@
                  password:(NSString *)password
                completion:(void(^)(NSError *error,NSDictionary *resultDic))handler;
 
-//注册
+//注册 
 - (void)registerWithValidateCode:(NSString *)validateCode
                           mobile:(NSString *)mobile
                         password:(NSString *)password
