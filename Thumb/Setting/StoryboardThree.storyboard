@@ -17,7 +17,7 @@
                         <sections>
                             <tableViewSection id="CYm-7C-NED">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="54" id="dcC-mC-5he">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="56" id="dcC-mC-5he">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dcC-mC-5he" id="s2N-CM-rAC">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -37,7 +37,7 @@
                                             <segue destination="tzs-iy-EMr" kind="show" identifier="findMenDian" id="EtV-64-URR"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="54" id="rdO-ct-BLq">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="56" id="rdO-ct-BLq">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rdO-ct-BLq" id="avD-Jl-nV2">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -57,7 +57,7 @@
                                             <segue destination="yvJ-Iy-2kt" kind="show" identifier="questionBack" id="tPn-mC-IVB"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="54" id="jdz-BV-yLZ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="56" id="jdz-BV-yLZ">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jdz-BV-yLZ" id="jOX-T2-4YE">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -74,7 +74,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="54" id="0Xa-th-djA">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="56" id="0Xa-th-djA">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Xa-th-djA" id="7nU-GS-iPS">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -94,7 +94,7 @@
                                             <segue destination="Ebj-Vb-8IN" kind="show" identifier="aboutThumb" id="YIy-yG-b9Q"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="54" id="MnO-ww-5HV">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="56" id="MnO-ww-5HV">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MnO-ww-5HV" id="azE-CZ-5T5">
                                             <autoresizingMask key="autoresizingMask"/>
