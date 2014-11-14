@@ -10,7 +10,7 @@
 #import "AllCustomerCategoryHeaders.h"
 
 @interface ZDWebService : NSObject<NSXMLParserDelegate>
-
+ 
 //登录
 - (void)loginWithUserName:(NSString *)userName
                  password:(NSString *)password
