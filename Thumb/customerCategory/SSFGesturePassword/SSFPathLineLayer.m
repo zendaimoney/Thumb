@@ -17,10 +17,10 @@
     CGContextSetLineCap(ctx,kCGLineCapSquare);
     
     //直线宽度
-    CGContextSetLineWidth(ctx,5.0);
+    CGContextSetLineWidth(ctx,2.0);
     
     //设置颜色
-    CGContextSetRGBStrokeColor(ctx,45/255.0, 99/255.0, 137/255.0, 0.5);
+    CGContextSetRGBStrokeColor(ctx,246/255.0, 203/255.0, 0.0/255.0, 1.0);
     
     //设置连接线拐角
     CGContextSetLineJoin(ctx, kCGLineJoinRound);
