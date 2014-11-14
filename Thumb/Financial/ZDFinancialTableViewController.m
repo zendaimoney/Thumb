@@ -62,9 +62,31 @@
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self performSegueWithIdentifier:@"showOffLineProduct" sender:self];
+}
 
 - (IBAction)test:(id)sender {
-    [[ZDWebService sharedWebService] loginWithUserName:@"13174125879" password:@"123456" completion:^(NSError *error, NSDictionary *resultDic) {
+//    [[ZDWebService sharedWebService] loginWithUserName:@"13174125879" password:@"123456" completion:^(NSError *error, NSDictionary *resultDic) {
+//        NSLog(@"%@",resultDic);}];
+    
+//    [[ZDWebService sharedWebService] getValidateCodeWithMobile:@"13482464176" oprType:@"1" completion:^(NSError *error, NSDictionary *resultDic) {
+//        NSLog(@"%@",resultDic);
+//    }];
+    
+//    [[ZDWebService sharedWebService] registerWithValidateCode:@"9571" mobile:@"13482464176" password:@"123456" completion:^(NSError *error, NSDictionary *resultDic) {
+//        NSLog(@"%@",resultDic);
+//    }];
+    
+//    [[ZDWebService sharedWebService] resetPasswordWithValidateCode:@"7565" mobile:@"13482464176" password:@"654321" completion:^(NSError *error, NSDictionary *resultDic) {
+//        NSLog(@"%@",resultDic);
+//    }];
+    
+    [[ZDWebService sharedWebService] modifyPasswordWithMobile:@"13482464176" oldpwd:@"654321" newpwd:@"123456" completion:^(NSError *error, NSDictionary *resultDic) {
         NSLog(@"%@",resultDic);
     }];
 }

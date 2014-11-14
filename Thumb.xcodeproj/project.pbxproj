@@ -32,6 +32,9 @@
 		81E795CF1A1339B900B75715 /* SSFSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E795CD1A1339B900B75715 /* SSFSegmentControl.m */; };
 		81E795D01A1339B900B75715 /* SSFSegmentControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */; };
 		81E795D31A1346C300B75715 /* financialTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E795D21A1346C300B75715 /* financialTableCell.m */; };
+		81F772101A15D145006A0347 /* ZDTradeDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F7720F1A15D145006A0347 /* ZDTradeDetailTableViewController.m */; };
+		81F772131A15D194006A0347 /* TradeDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F772121A15D194006A0347 /* TradeDetailTableViewCell.m */; };
+		81F772161A15DE22006A0347 /* ZDOffLineProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F772151A15DE22006A0347 /* ZDOffLineProductViewController.m */; };
 		8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */; };
 		8D071F531A1442ED0051FE04 /* ZDAboutUsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F521A1442ED0051FE04 /* ZDAboutUsTableViewController.m */; };
 		8D071F561A1450220051FE04 /* ZDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F551A1450220051FE04 /* ZDWebViewController.m */; };
@@ -101,6 +104,12 @@
 		81E795CE1A1339B900B75715 /* SSFSegmentControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFSegmentControl.xib; sourceTree = "<group>"; };
 		81E795D11A1346C300B75715 /* financialTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = financialTableCell.h; sourceTree = "<group>"; };
 		81E795D21A1346C300B75715 /* financialTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = financialTableCell.m; sourceTree = "<group>"; };
+		81F7720E1A15D145006A0347 /* ZDTradeDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTradeDetailTableViewController.h; sourceTree = "<group>"; };
+		81F7720F1A15D145006A0347 /* ZDTradeDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTradeDetailTableViewController.m; sourceTree = "<group>"; };
+		81F772111A15D194006A0347 /* TradeDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeDetailTableViewCell.h; sourceTree = "<group>"; };
+		81F772121A15D194006A0347 /* TradeDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeDetailTableViewCell.m; sourceTree = "<group>"; };
+		81F772141A15DE22006A0347 /* ZDOffLineProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDOffLineProductViewController.h; sourceTree = "<group>"; };
+		81F772151A15DE22006A0347 /* ZDOffLineProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDOffLineProductViewController.m; sourceTree = "<group>"; };
 		8D071F3F1A1363710051FE04 /* ZDQuestionBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDQuestionBackViewController.h; sourceTree = "<group>"; };
 		8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDQuestionBackViewController.m; sourceTree = "<group>"; };
 		8D071F511A1442ED0051FE04 /* ZDAboutUsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDAboutUsTableViewController.h; sourceTree = "<group>"; };
@@ -219,6 +228,8 @@
 				813D03561A105DE500F62E40 /* ZDFinancialTableViewController.m */,
 				81E795D11A1346C300B75715 /* financialTableCell.h */,
 				81E795D21A1346C300B75715 /* financialTableCell.m */,
+				81F772141A15DE22006A0347 /* ZDOffLineProductViewController.h */,
+				81F772151A15DE22006A0347 /* ZDOffLineProductViewController.m */,
 			);
 			path = Financial;
 			sourceTree = "<group>";
@@ -253,6 +264,10 @@
 				8D071F641A149BA50051FE04 /* MyAccountTableViewCell.m */,
 				8D071F651A149BA50051FE04 /* ZDMyAccountTableViewController.h */,
 				8D071F661A149BA50051FE04 /* ZDMyAccountTableViewController.m */,
+				81F7720E1A15D145006A0347 /* ZDTradeDetailTableViewController.h */,
+				81F7720F1A15D145006A0347 /* ZDTradeDetailTableViewController.m */,
+				81F772111A15D194006A0347 /* TradeDetailTableViewCell.h */,
+				81F772121A15D194006A0347 /* TradeDetailTableViewCell.m */,
 			);
 			path = MyAccount;
 			sourceTree = "<group>";
@@ -451,12 +466,14 @@
 				8D071F741A14A7410051FE04 /* ZDRegisterTableViewController.m in Sources */,
 				81E36BE61A10913F00784D93 /* Reachability.m in Sources */,
 				8D071F671A149BA50051FE04 /* MyAccountTableViewCell.m in Sources */,
+				81F772101A15D145006A0347 /* ZDTradeDetailTableViewController.m in Sources */,
 				81E64D451A1207270070BCD3 /* ZDWebserviceDataParse.m in Sources */,
 				8D071F561A1450220051FE04 /* ZDWebViewController.m in Sources */,
 				81E36BE41A10913F00784D93 /* NSString+Tony.m in Sources */,
 				813D03581A105DE500F62E40 /* ZDFinancialTableViewController.m in Sources */,
 				8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */,
 				8D071F601A1457D20051FE04 /* ZDLookForStroesViewController.m in Sources */,
+				81F772161A15DE22006A0347 /* ZDOffLineProductViewController.m in Sources */,
 				8D071F6E1A149BCB0051FE04 /* SSFShowSimpleAlert.m in Sources */,
 				813D03211A10551400F62E40 /* AppDelegate.m in Sources */,
 				8D071F6B1A149BB30051FE04 /* ZDLoginViewController.m in Sources */,
@@ -471,6 +488,7 @@
 				8D071F621A1457D20051FE04 /* ZDNearbyStoresTableViewController.m in Sources */,
 				81E64D431A1207270070BCD3 /* ZDWebService+URLString.m in Sources */,
 				813D036B1A105E0300F62E40 /* ZDSettingTableViewController.m in Sources */,
+				81F772131A15D194006A0347 /* TradeDetailTableViewCell.m in Sources */,
 				813D031E1A10551400F62E40 /* main.m in Sources */,
 				8D071F531A1442ED0051FE04 /* ZDAboutUsTableViewController.m in Sources */,
 			);

@@ -22,6 +22,12 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
 -(NSArray *)listImagesAndNamesWithIndex:(NSInteger)index
 {
     UIImage *image;
@@ -56,6 +62,17 @@
     cell.iconImageView.image = [self listImagesAndNamesWithIndex:indexPath.row][0];
     cell.titleLabel.text = [self listImagesAndNamesWithIndex:indexPath.row][1];
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.row == 1) {
+        [self performSegueWithIdentifier:@"showTradeDetail" sender:self];
+    }
 }
 
 @end

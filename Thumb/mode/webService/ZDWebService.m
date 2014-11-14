@@ -12,8 +12,8 @@
 #import "ZDWebserviceDataParse.h"
 
 #define DefaultCRMPublishService  @"300001"//crm公共接口转发
-#define DefaultProjectNo    @"D"
-#define secret @"bb369ff752074e2ba055f32da6bc3114"
+#define DefaultProjectNo    @"D"//大拇指项目
+#define secret @"bb369ff752074e2ba055f32da6bc3114"//密钥匙
 
 @interface ZDWebService ()
 
@@ -21,6 +21,7 @@
 
 @implementation ZDWebService
 
+//登陆
 - (void)loginWithUserName:(NSString *)userName
                  password:(NSString *)password
                completion:(void(^)(NSError *error,NSDictionary *resultDic))handler
@@ -34,6 +35,119 @@
     
     [self fetchByWebserviceURLString:urlString dictionary:oriDic handler:handler];
     
+}
+
+//注册
+- (void)registerWithValidateCode:(NSString *)validateCode
+                          mobile:(NSString *)mobile
+                        password:(NSString *)password
+                      completion:(void(^)(NSError *error,NSDictionary *resultDic))handler
+{
+    password = [NSString md5:password];
+    NSDictionary *oriDic = @{
+                             @"validateCode":validateCode,
+                             @"mobile":mobile,
+                             @"password":password
+                             };
+    NSString *urlString = [self URLStringForRegister];
+    
+    [self fetchByWebserviceURLString:urlString dictionary:oriDic handler:handler];
+}
+
+//获取验证码,oprType:操作类型(”0”:注册, ”1”:重置密码)
+- (void)getValidateCodeWithMobile:(NSString *)mobile
+                          oprType:(NSString *)oprType
+                       completion:(void(^)(NSError *error,NSDictionary *resultDic))handler
+{
+    NSDictionary *oriDic = @{
+                             @"mobile":mobile,
+                             @"oprType":oprType
+                             };
+    NSString *urlString = [self URLStringForGetValidateCode];
+    
+    [self fetchByWebserviceURLString:urlString dictionary:oriDic handler:handler];
+}
+
+//身份证绑定
+- (void)idCardBindWithMobile:(NSString *)mobile
+                        name:(NSString *)name
+                  idCardBind:(NSString *)idCardBind
+                completion:(void(^)(NSError *error,NSDictionary *resultDic))handler
+{
+    NSDictionary *oriDic = @{
+                             @"mobile":mobile,
+                             @"name":name,
+                             @"idCardBind":idCardBind
+                             };
+    NSString *urlString = [self URLStringForIdCardBind];
+    
+    [self fetchByWebserviceURLString:urlString dictionary:oriDic handler:handler];
+}
+
+//忘记密码后重设密码
+- (void)resetPasswordWithValidateCode:(NSString *)validateCode
+                               mobile:(NSString *)mobile
+                             password:(NSString *)password
+                           completion:(void (^)(NSError *, NSDictionary *))handler
+{
+    password = [NSString md5:password];
+    NSDictionary *oriDic = @{
+                             @"validateCode":validateCode,
+                             @"mobile":mobile,
+                             @"password":password
+                             };
+    NSString *urlString = [self URLStringForForgetAndResetPassword];
+    
+    [self fetchByWebserviceURLString:urlString dictionary:oriDic handler:handler];
+}
+
+//获取网点
+/*
+    netSiteType:网点类型(“-1”所有网点，”0”理财网点，”1”贷款网点) 我们传0
+    mapType:地图类型(“00”google，”01”baidu)
+    pageNo:页码
+    pageSize:每页显示数量
+    longitude:当前经度
+    latitude:当前纬度
+ */
+- (void)getNetSiteWithNetSiteType:(NSString *)netSiteType
+                          mapType:(NSString *)mapType
+                           pageNo:(NSString *)pageNo
+                         pageSize:(NSString *)pageSize
+                        longitude:(NSString *)longitude
+                         latitude:(NSString *)latitude
+                       completion:(void (^)(NSError *, NSDictionary *))handler
+{
+    NSDictionary *oriDic = @{
+                             @"netSiteType":netSiteType,
+                             @"mapType":mapType,
+                             @"pageNo":pageNo,
+                             @"pageSize":pageSize,
+                             @"x":longitude,
+                             @"y":latitude
+                             };
+    NSString *urlString = [self URLStringForGetNetSite];
+    
+    [self fetchByWebserviceURLString:urlString dictionary:oriDic handler:handler];
+}
+
+//修改密码
+- (void)modifyPasswordWithMobile:(NSString *)mobile
+                          oldpwd:(NSString *)oldpwd
+                          newpwd:(NSString *)newpwd
+                      completion:(void(^)(NSError *error,NSDictionary *resultDic))handler
+{
+    oldpwd = [NSString md5:oldpwd];
+    newpwd = [NSString md5:newpwd];
+    
+    NSDictionary *oriDic = @{
+                             @"mobile":mobile,
+                             @"oldpwd":oldpwd,
+                             @"newpwd":newpwd
+                             };
+    NSString *urlString = [self URLStringForUpdatePassword];
+    
+    [self fetchByWebserviceURLString:urlString dictionary:oriDic handler:handler];
 }
 
 #pragma mark - 共用请求方法
