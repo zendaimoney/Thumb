@@ -35,6 +35,7 @@
 		81F772101A15D145006A0347 /* ZDTradeDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F7720F1A15D145006A0347 /* ZDTradeDetailTableViewController.m */; };
 		81F772131A15D194006A0347 /* TradeDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F772121A15D194006A0347 /* TradeDetailTableViewCell.m */; };
 		81F772161A15DE22006A0347 /* ZDOffLineProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F772151A15DE22006A0347 /* ZDOffLineProductViewController.m */; };
+		81F772191A15E349006A0347 /* ZDRegisterNextTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F772181A15E349006A0347 /* ZDRegisterNextTableViewController.m */; };
 		8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */; };
 		8D071F531A1442ED0051FE04 /* ZDAboutUsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F521A1442ED0051FE04 /* ZDAboutUsTableViewController.m */; };
 		8D071F561A1450220051FE04 /* ZDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F551A1450220051FE04 /* ZDWebViewController.m */; };
@@ -110,6 +111,8 @@
 		81F772121A15D194006A0347 /* TradeDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeDetailTableViewCell.m; sourceTree = "<group>"; };
 		81F772141A15DE22006A0347 /* ZDOffLineProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDOffLineProductViewController.h; sourceTree = "<group>"; };
 		81F772151A15DE22006A0347 /* ZDOffLineProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDOffLineProductViewController.m; sourceTree = "<group>"; };
+		81F772171A15E349006A0347 /* ZDRegisterNextTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDRegisterNextTableViewController.h; sourceTree = "<group>"; };
+		81F772181A15E349006A0347 /* ZDRegisterNextTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDRegisterNextTableViewController.m; sourceTree = "<group>"; };
 		8D071F3F1A1363710051FE04 /* ZDQuestionBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDQuestionBackViewController.h; sourceTree = "<group>"; };
 		8D071F401A1363710051FE04 /* ZDQuestionBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDQuestionBackViewController.m; sourceTree = "<group>"; };
 		8D071F511A1442ED0051FE04 /* ZDAboutUsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDAboutUsTableViewController.h; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 		813D03591A105E0300F62E40 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				81F772171A15E349006A0347 /* ZDRegisterNextTableViewController.h */,
+				81F772181A15E349006A0347 /* ZDRegisterNextTableViewController.m */,
 				813D035A1A105E0300F62E40 /* Main.storyboard */,
 				8D071F691A149BB30051FE04 /* ZDLoginViewController.h */,
 				8D071F6A1A149BB30051FE04 /* ZDLoginViewController.m */,
@@ -466,6 +471,7 @@
 				8D071F741A14A7410051FE04 /* ZDRegisterTableViewController.m in Sources */,
 				81E36BE61A10913F00784D93 /* Reachability.m in Sources */,
 				8D071F671A149BA50051FE04 /* MyAccountTableViewCell.m in Sources */,
+				81F772191A15E349006A0347 /* ZDRegisterNextTableViewController.m in Sources */,
 				81F772101A15D145006A0347 /* ZDTradeDetailTableViewController.m in Sources */,
 				81E64D451A1207270070BCD3 /* ZDWebserviceDataParse.m in Sources */,
 				8D071F561A1450220051FE04 /* ZDWebViewController.m in Sources */,
