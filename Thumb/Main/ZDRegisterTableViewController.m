@@ -15,6 +15,8 @@
 
 @implementation ZDRegisterTableViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     _errorOrRightImg1.hidden = YES;
@@ -32,6 +34,13 @@
         [SSFShowSimpleAlert showSimpleAlertWithTitle:@"" message:@"密码不能为空"];
         return NO;
     } else return YES;
+}
+
+#pragma mark - Actions
+
+- (IBAction)tapGesturePressed:(id)sender
+{
+    [self.view endEditing:YES];
 }
 
 #pragma mark - UITextFiel Delegate

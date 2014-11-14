@@ -20,6 +20,13 @@
     self.errorOrRightImg2.hidden = YES;
 }
 
+#pragma mark - Actions
+
+- (IBAction)tapGesturePressed:(id)sender
+{
+    [self.view endEditing:YES];
+}
+
 #pragma mark - UITextFiel Delegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];

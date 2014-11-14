@@ -15,6 +15,12 @@
 
 @implementation ZDLoginViewController
 
+#pragma mark - Actions
+
+- (IBAction)tapGesturePressed:(id)sender
+{
+    [self.view endEditing:YES];
+}
 
 - (IBAction)loginButtonPressed:(id)sender {
     [self.view endEditing:YES];
