@@ -9,7 +9,6 @@
 #import "ZDRegisterTableViewController.h"
 #import "SSFShowSimpleAlert.h"
 #define DefaultMaxLength   11
-#define IdCardLength 18
 @interface ZDRegisterTableViewController ()<UITextFieldDelegate>
 
 @end
@@ -20,7 +19,6 @@
     [super viewDidLoad];
     _errorOrRightImg1.hidden = YES;
     _errorOrRightImg2.hidden = YES;
-    _errorOrRightImg3.hidden = YES;
 }
 
 - (BOOL)checkParam{
@@ -36,8 +34,7 @@
     } else return YES;
 }
 
-#pragma mark - UITextFielDelegate
-
+#pragma mark - UITextFiel Delegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     if (textField == self.phoneNumTfd) {
@@ -60,19 +57,6 @@
             self.errorOrRightImg2.hidden = YES;
         }
         return YES;
-    } else if(textField == self.idCardNumTfd){
-        self.errorOrRightImg3.hidden = NO;
-        if (!newString.length) {
-            self.errorOrRightImg3.hidden = YES;
-            return YES;
-        } else if (newString.length < IdCardLength){
-            self.errorOrRightImg3.image = [UIImage imageNamed:@"ico_error"];
-            return YES;
-        } else {
-            textField.text = [newString substringToIndex:IdCardLength];
-            self.errorOrRightImg3.image = [UIImage imageNamed:@"ico_right"];
-            return NO;
-        }
     } else return YES;
 }
 

@@ -15,8 +15,4 @@
 @property (weak, nonatomic) IBOutlet UIImageView *errorOrRightImg1;
 @property (weak, nonatomic) IBOutlet UIImageView *errorOrRightImg2;
 
-@property (weak, nonatomic) IBOutlet UITextField *userNameTfd;
-@property (weak, nonatomic) IBOutlet UITextField *idCardNumTfd;
-@property (weak, nonatomic) IBOutlet UIImageView *errorOrRightImg3;
-
 @end

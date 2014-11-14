@@ -218,12 +218,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MET-sp-Oz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="323" y="831"/>
+            <point key="canvasLocation" x="311" y="831"/>
         </scene>
-        <!--Register Table View Controller-->
+        <!--Register Next Table View Controller-->
         <scene sceneID="5VO-7d-bly">
             <objects>
-                <tableViewController id="EMI-ib-SRI" customClass="ZDRegisterTableViewController" sceneMemberID="viewController">
+                <tableViewController id="EMI-ib-SRI" customClass="ZDRegisterNextTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="K0n-MR-2Ms">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,9 +289,6 @@
                                                         <outlet property="delegate" destination="EMI-ib-SRI" id="WPI-A5-h0w"/>
                                                     </connections>
                                                 </textField>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico_right" translatesAutoresizingMaskIntoConstraints="NO" id="M1Z-IG-K3V">
-                                                    <rect key="frame" x="297" y="26" width="15" height="11"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -305,14 +302,14 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="errorOrRightImg3" destination="M1Z-IG-K3V" id="qS1-ns-GmN"/>
+                        <outlet property="IDCardNumTfd" destination="0UV-sX-Qc2" id="AVa-hZ-p4M"/>
                         <outlet property="idCardNumTfd" destination="0UV-sX-Qc2" id="TmA-ea-OnK"/>
-                        <outlet property="userNameTfd" destination="YVy-YH-KWL" id="OTM-Mj-tMs"/>
+                        <outlet property="userNameTfd" destination="YVy-YH-KWL" id="AhX-uu-mNQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVd-YK-9Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="831"/>
+            <point key="canvasLocation" x="732" y="831"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZBB-mu-o1V">
