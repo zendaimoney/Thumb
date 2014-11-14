@@ -14,4 +14,11 @@
 @interface ZDWebService (URLString)
 
 - (NSString *)URLStringForLogin;
+- (NSString *)URLStringForRegister;
+- (NSString *)URLStringForGetValidateCode;
+- (NSString *)URLStringForIdCardBind;
+- (NSString *)URLStringForForgetAndResetPassword;
+- (NSString *)URLStringForGetNetSite;
+- (NSString *)URLStringForUpdatePassword;
+
 @end
