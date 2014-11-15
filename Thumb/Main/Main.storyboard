@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jdL-7H-xdO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jdL-7H-xdO">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <scenes>
         <!--Main Tabbar Controller-->
@@ -51,7 +51,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNM-oI-TlM">
-                                        <rect key="frame" x="15" y="64" width="305" height="0.5"/>
+                                        <rect key="frame" x="15" y="64" width="305" height="1"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入登录密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0q4-c9-A8Z">
@@ -88,6 +88,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NZl-Ex-XKs" appends="YES" id="obb-Xz-GhS"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="登陆" id="ZEw-k3-YBn">
                         <barButtonItem key="leftBarButtonItem" title="返回" id="wrF-5y-LrV">
@@ -110,6 +114,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hn6-M5-fVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NZl-Ex-XKs">
+                    <connections>
+                        <action selector="tapGesturePressed:" destination="kO3-Ji-624" id="dZy-j0-Ccj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-126" y="831"/>
         </scene>
@@ -121,6 +130,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="TLk-dr-KwV">
                             <rect key="frame" x="0.0" y="321" width="320" height="246"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -217,6 +227,7 @@
                         <connections>
                             <outlet property="dataSource" destination="GIn-rf-g4L" id="C5o-6e-813"/>
                             <outlet property="delegate" destination="GIn-rf-g4L" id="C4o-fS-CpW"/>
+                            <outletCollection property="gestureRecognizers" destination="qSS-Me-cs5" appends="YES" id="nOf-WP-01x"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="忘记密码" id="glv-2i-60p"/>
@@ -230,6 +241,11 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cki-tW-Lg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qSS-Me-cs5">
+                    <connections>
+                        <action selector="tapGesturePressed:" destination="GIn-rf-g4L" id="fsZ-py-rp1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="311" y="197"/>
         </scene>
@@ -241,6 +257,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="WnC-mt-69y">
                             <rect key="frame" x="0.0" y="257" width="320" height="311"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -360,6 +377,7 @@
                         <connections>
                             <outlet property="dataSource" destination="iWr-lV-qDt" id="doN-Hs-PTS"/>
                             <outlet property="delegate" destination="iWr-lV-qDt" id="PQc-0T-ka1"/>
+                            <outletCollection property="gestureRecognizers" destination="AXE-ty-DUb" appends="YES" id="2bU-oi-0ne"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="注册" id="ZWY-qm-Anr"/>
@@ -373,6 +391,11 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MET-sp-Oz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AXE-ty-DUb">
+                    <connections>
+                        <action selector="tapGesturePressed:" destination="iWr-lV-qDt" id="g1P-KG-mrr"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="311" y="831"/>
         </scene>
@@ -384,6 +407,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="h9g-FP-x4p">
                             <rect key="frame" x="0.0" y="173" width="320" height="394"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -455,6 +479,7 @@
                         <connections>
                             <outlet property="dataSource" destination="EMI-ib-SRI" id="7Zf-Hh-J65"/>
                             <outlet property="delegate" destination="EMI-ib-SRI" id="OEp-YU-xWX"/>
+                            <outletCollection property="gestureRecognizers" destination="M3p-Cs-0tx" appends="YES" id="6Da-Ao-qkZ"/>
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -464,6 +489,11 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVd-YK-9Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="M3p-Cs-0tx">
+                    <connections>
+                        <action selector="tapGesturePressed:" destination="EMI-ib-SRI" id="jOY-hz-aLi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="732" y="831"/>
         </scene>
