@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -34,7 +34,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="tzs-iy-EMr" kind="show" identifier="findMenDian" id="EtV-64-URR"/>
+                                            <segue destination="nqj-5F-YHR" kind="show" id="n6t-6e-k4F"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="56" id="rdO-ct-BLq">
@@ -228,7 +228,7 @@
             </objects>
             <point key="canvasLocation" x="1690" y="61"/>
         </scene>
-        <!--常见问题-->
+        <!--html-->
         <scene sceneID="1WM-56-9Jc">
             <objects>
                 <viewController storyboardIdentifier="ZDWebViewController" hidesBottomBarWhenPushed="YES" id="9W3-dw-fYR" customClass="ZDWebViewController" sceneMemberID="viewController">
@@ -247,7 +247,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="常见问题" id="xul-Ug-E0l"/>
+                    <navigationItem key="navigationItem" title="html" id="xul-Ug-E0l"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -256,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzr-h8-D32" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1250" y="348"/>
+            <point key="canvasLocation" x="1192" y="320"/>
         </scene>
         <!--意见反馈-->
         <scene sceneID="e7I-Vy-mZf">
@@ -307,83 +307,6 @@
             </objects>
             <point key="canvasLocation" x="1690" y="-603"/>
         </scene>
-        <!--查找门店-->
-        <scene sceneID="xI1-iF-onH">
-            <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="tzs-iy-EMr" customClass="ZDLookForStroesViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="p6w-Wh-v6g"/>
-                        <viewControllerLayoutGuide type="bottom" id="67O-ZG-mi4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BBO-8i-0cm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qL-aI-tla">
-                                <rect key="frame" x="126" y="403" width="69" height="30"/>
-                                <state key="normal" title="查找门店"/>
-                                <connections>
-                                    <segue destination="d9a-5K-6ml" kind="show" id="0ZE-pz-hZq"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="总部地址：上海市浦东新区丁香路1208号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49t-fa-aZG">
-                                <rect key="frame" x="16" y="303" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="联系我们：400-821-6888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-Xl-3Ma">
-                                <rect key="frame" x="16" y="332" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="查找门店" id="Aaq-VZ-mg2"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dcg-pz-ZNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1690" y="-1263"/>
-        </scene>
-        <!--附近网点-->
-        <scene sceneID="gYz-YB-Qz5">
-            <objects>
-                <tableViewController id="d9a-5K-6ml" customClass="ZDNearbyStoresTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DY0-cS-VdW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3r9-Vt-K8i">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3r9-Vt-K8i" id="P4M-yY-sj0">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="d9a-5K-6ml" id="kng-E5-tod"/>
-                            <outlet property="delegate" destination="d9a-5K-6ml" id="Qmq-9F-UvM"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="附近网点" id="jTJ-2l-2da">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ERG-J0-JKl">
-                            <connections>
-                                <segue destination="Lim-T9-BQk" kind="show" identifier="showMap" id="TH2-zW-ahI"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e5g-4h-gYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2197" y="-1263"/>
-        </scene>
         <!--地图显示-->
         <scene sceneID="OBx-V3-agJ">
             <objects>
@@ -396,7 +319,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQ4-Mi-SOz">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQ4-Mi-SOz">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <connections>
                                     <outlet property="delegate" destination="Lim-T9-BQk" id="oBp-mb-11d"/>
@@ -419,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JI-ca-eWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2635" y="-1263"/>
+            <point key="canvasLocation" x="2092" y="-1244"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DSx-eG-fxZ">
@@ -440,9 +363,134 @@
             </objects>
             <point key="canvasLocation" x="724" y="-356"/>
         </scene>
+        <!--查找门店-->
+        <scene sceneID="gj6-7e-f2a">
+            <objects>
+                <viewController id="nqj-5F-YHR" customClass="ZDNearbyStoresTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TRH-xf-HBX"/>
+                        <viewControllerLayoutGuide type="bottom" id="h8w-F4-dq4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bfK-tl-8SW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSq-TA-OtK" userLabel="top view">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="224"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_site" translatesAutoresizingMaskIntoConstraints="NO" id="OP3-Qm-eHl">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上海市浦东新区丁香路1208号（总部）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3n-gi-VX1">
+                                        <rect key="frame" x="20" y="118" width="257" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="400-821-6888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLc-Qx-0uk">
+                                        <rect key="frame" x="20" y="139" width="103" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="查找门店" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mG6-An-Zkz">
+                                        <rect key="frame" x="116" y="34" width="88" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="exG-Rv-Lca"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ris-Iw-WCW">
+                                <rect key="frame" x="0.0" y="178" width="320" height="389"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopAddressCell" id="Wqv-Rq-ygb" customClass="ZDShopAddressTableCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wqv-Rq-ygb" id="SL5-yC-osB">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiw-ot-zzm">
+                                                    <rect key="frame" x="50" y="14" width="254" height="80"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="大拇指理财中心" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sq6-06-r9d">
+                                                            <rect key="frame" x="8" y="8" width="246" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上海市浦东新区丁香路1208号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JC-Ug-9MR">
+                                                            <rect key="frame" x="8" y="33" width="246" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTt-Ny-hGD">
+                                                            <rect key="frame" x="8" y="50" width="246" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <state key="normal" title="021-12345678">
+                                                                <color key="titleColor" red="1" green="0.4549019608" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ife-ha-BX1">
+                                                    <rect key="frame" x="24" y="0.0" width="1" height="110"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico_site" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-9h-AWl">
+                                                    <rect key="frame" x="8" y="14" width="34" height="34"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELo-9h-3Pe">
+                                                    <rect key="frame" x="12" y="20" width="27" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nqj-5F-YHR" id="i6l-0Z-mKu"/>
+                                    <outlet property="delegate" destination="nqj-5F-YHR" id="GeA-0x-EWT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ris-Iw-WCW" firstAttribute="leading" secondItem="bfK-tl-8SW" secondAttribute="leading" id="CGB-jH-t41"/>
+                            <constraint firstItem="h8w-F4-dq4" firstAttribute="top" secondItem="ris-Iw-WCW" secondAttribute="bottom" constant="1" id="P0P-oF-hIe"/>
+                            <constraint firstItem="zSq-TA-OtK" firstAttribute="leading" secondItem="bfK-tl-8SW" secondAttribute="leading" id="QV2-vv-QXx"/>
+                            <constraint firstAttribute="trailing" secondItem="ris-Iw-WCW" secondAttribute="trailing" id="f3v-tK-49d"/>
+                            <constraint firstAttribute="trailing" secondItem="zSq-TA-OtK" secondAttribute="trailing" id="inh-Ot-BUs"/>
+                            <constraint firstItem="ris-Iw-WCW" firstAttribute="top" secondItem="TRH-xf-HBX" secondAttribute="bottom" constant="158" id="jCw-HP-MI3"/>
+                            <constraint firstItem="zSq-TA-OtK" firstAttribute="top" secondItem="bfK-tl-8SW" secondAttribute="top" id="kLq-O8-CgS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="查找门店" id="PGq-EX-WPO"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="ris-Iw-WCW" id="QM4-x6-Ipe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAW-Jt-I3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="-1244"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bg_site" width="320" height="178"/>
         <image name="ico_call" width="21" height="22"/>
+        <image name="ico_site" width="34" height="34"/>
         <image name="icon_about" width="22" height="23"/>
         <image name="icon_location" width="20" height="26"/>
         <image name="icon_logo_color" width="33" height="38"/>

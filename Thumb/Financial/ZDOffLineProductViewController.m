@@ -7,6 +7,7 @@
 //
 
 #import "ZDOffLineProductViewController.h"
+#import "SSFShowSimpleAlert.h"
 
 @interface ZDOffLineProductViewController ()
 
@@ -36,4 +37,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)contactServicesBtnPressed:(id)sender {
+    if ([[UIDevice currentDevice].model rangeOfString:@"iPhone"].location != NSNotFound) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://4008216888"]];
+    } else {
+        [SSFShowSimpleAlert showSimpleAlertWithTitle:@"" message:@"此设备没有通话功能"];
+    }
+}
 @end

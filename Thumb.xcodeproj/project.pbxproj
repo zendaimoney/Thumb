@@ -43,7 +43,6 @@
 		8D071F531A1442ED0051FE04 /* ZDAboutUsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F521A1442ED0051FE04 /* ZDAboutUsTableViewController.m */; };
 		8D071F561A1450220051FE04 /* ZDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F551A1450220051FE04 /* ZDWebViewController.m */; };
 		8D071F5F1A1457D20051FE04 /* MyAnnotaion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F581A1457D20051FE04 /* MyAnnotaion.m */; };
-		8D071F601A1457D20051FE04 /* ZDLookForStroesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F5A1A1457D20051FE04 /* ZDLookForStroesViewController.m */; };
 		8D071F611A1457D20051FE04 /* ZDMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F5C1A1457D20051FE04 /* ZDMapViewController.m */; };
 		8D071F621A1457D20051FE04 /* ZDNearbyStoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F5E1A1457D20051FE04 /* ZDNearbyStoresTableViewController.m */; };
 		8D071F671A149BA50051FE04 /* MyAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F641A149BA50051FE04 /* MyAccountTableViewCell.m */; };
@@ -51,6 +50,7 @@
 		8D071F6B1A149BB30051FE04 /* ZDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F6A1A149BB30051FE04 /* ZDLoginViewController.m */; };
 		8D071F6E1A149BCB0051FE04 /* SSFShowSimpleAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F6D1A149BCB0051FE04 /* SSFShowSimpleAlert.m */; };
 		8D071F741A14A7410051FE04 /* ZDRegisterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D071F731A14A7410051FE04 /* ZDRegisterTableViewController.m */; };
+		8D0973801A17440D0092B4C2 /* ZDShopAddressTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D09737F1A17440D0092B4C2 /* ZDShopAddressTableCell.m */; };
 		8DA96AEF1A160527005D3B89 /* ZDForgetPWDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA96AEE1A160527005D3B89 /* ZDForgetPWDTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -130,8 +130,6 @@
 		8D071F551A1450220051FE04 /* ZDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDWebViewController.m; sourceTree = "<group>"; };
 		8D071F571A1457D20051FE04 /* MyAnnotaion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotaion.h; sourceTree = "<group>"; };
 		8D071F581A1457D20051FE04 /* MyAnnotaion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotaion.m; sourceTree = "<group>"; };
-		8D071F591A1457D20051FE04 /* ZDLookForStroesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLookForStroesViewController.h; sourceTree = "<group>"; };
-		8D071F5A1A1457D20051FE04 /* ZDLookForStroesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLookForStroesViewController.m; sourceTree = "<group>"; };
 		8D071F5B1A1457D20051FE04 /* ZDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMapViewController.h; sourceTree = "<group>"; };
 		8D071F5C1A1457D20051FE04 /* ZDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMapViewController.m; sourceTree = "<group>"; };
 		8D071F5D1A1457D20051FE04 /* ZDNearbyStoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDNearbyStoresTableViewController.h; sourceTree = "<group>"; };
@@ -146,6 +144,8 @@
 		8D071F6D1A149BCB0051FE04 /* SSFShowSimpleAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFShowSimpleAlert.m; sourceTree = "<group>"; };
 		8D071F721A14A7410051FE04 /* ZDRegisterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDRegisterTableViewController.h; sourceTree = "<group>"; };
 		8D071F731A14A7410051FE04 /* ZDRegisterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDRegisterTableViewController.m; sourceTree = "<group>"; };
+		8D09737E1A17440D0092B4C2 /* ZDShopAddressTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDShopAddressTableCell.h; sourceTree = "<group>"; };
+		8D09737F1A17440D0092B4C2 /* ZDShopAddressTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDShopAddressTableCell.m; sourceTree = "<group>"; };
 		8DA96AED1A160527005D3B89 /* ZDForgetPWDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDForgetPWDTableViewController.h; sourceTree = "<group>"; };
 		8DA96AEE1A160527005D3B89 /* ZDForgetPWDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDForgetPWDTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -296,10 +296,10 @@
 				813D03631A105E0300F62E40 /* StoryboardThree.storyboard */,
 				8D071F571A1457D20051FE04 /* MyAnnotaion.h */,
 				8D071F581A1457D20051FE04 /* MyAnnotaion.m */,
-				8D071F591A1457D20051FE04 /* ZDLookForStroesViewController.h */,
-				8D071F5A1A1457D20051FE04 /* ZDLookForStroesViewController.m */,
 				8D071F5B1A1457D20051FE04 /* ZDMapViewController.h */,
 				8D071F5C1A1457D20051FE04 /* ZDMapViewController.m */,
+				8D09737E1A17440D0092B4C2 /* ZDShopAddressTableCell.h */,
+				8D09737F1A17440D0092B4C2 /* ZDShopAddressTableCell.m */,
 				8D071F5D1A1457D20051FE04 /* ZDNearbyStoresTableViewController.h */,
 				8D071F5E1A1457D20051FE04 /* ZDNearbyStoresTableViewController.m */,
 				813D03641A105E0300F62E40 /* ZDSettingTableViewController.h */,
@@ -508,9 +508,9 @@
 				813D03581A105DE500F62E40 /* ZDFinancialTableViewController.m in Sources */,
 				8D071F411A1363710051FE04 /* ZDQuestionBackViewController.m in Sources */,
 				81F772201A15E712006A0347 /* SSFPasswordGestureView.m in Sources */,
-				8D071F601A1457D20051FE04 /* ZDLookForStroesViewController.m in Sources */,
 				81F772161A15DE22006A0347 /* ZDOffLineProductViewController.m in Sources */,
 				8D071F6E1A149BCB0051FE04 /* SSFShowSimpleAlert.m in Sources */,
+				8D0973801A17440D0092B4C2 /* ZDShopAddressTableCell.m in Sources */,
 				813D03211A10551400F62E40 /* AppDelegate.m in Sources */,
 				8D071F6B1A149BB30051FE04 /* ZDLoginViewController.m in Sources */,
 				81E36BE51A10913F00784D93 /* GSReachability.m in Sources */,

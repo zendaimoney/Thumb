@@ -9,11 +9,14 @@
 #import "ZDNearbyStoresTableViewController.h"
 #import "ZDMapViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "ZDShopAddressTableCell.h"
 
 @interface ZDNearbyStoresTableViewController ()<CLLocationManagerDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (nonatomic) CLLocationCoordinate2D coordinate;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *arr;
 
 @end
 
@@ -28,6 +31,27 @@
         [self.locationManager requestWhenInUseAuthorization];
     }
     [self.locationManager startUpdatingLocation];
+    
+    self.arr = @[@"1",@"2"];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
+#pragma mark - tabbleView datasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.arr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellidentifier = @"shopAddressCell";
+    ZDShopAddressTableCell *cell = [tableView dequeueReusableCellWithIdentifier:cellidentifier forIndexPath:indexPath];
+    return cell;
 }
 
 #pragma mark - properties

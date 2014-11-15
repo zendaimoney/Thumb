@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ZDOffLineProductViewController : UIViewController
+- (IBAction)contactServicesBtnPressed:(id)sender;
 
 @end

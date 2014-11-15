@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZDNearbyStoresTableViewController : UITableViewController
+@interface ZDNearbyStoresTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
